@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132223024-1"></script>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S23L2N44R2"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', 'UA-132223024-1');
+        gtag('config', 'G-S23L2N44R2');
+
     </script>
     <link rel="stylesheet" type="text/css" href="css/styles.css"> 
 
@@ -231,6 +234,21 @@
                 <p><a href="https://www.buybuybaby.com/store/static/PrivacyPolicy" target="_blank" class="trm-track" data-type="link" data-id="9" data-name="Privacy Policy">Privacy Policy</a></p>
             </div>
         </section>
+        
+        <script>
+            /**
+            * Function that captures a click on an outbound link in Analytics.
+            * This function takes a valid URL string as an argument, and uses that URL string
+            * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+            * using 'navigator.sendBeacon' in browser that support it.
+            */
+            var captureOutboundLink = function(url) {
+               ga('send', 'event', 'outbound', 'click', url, {
+                 'transport': 'beacon',
+                 'hitCallback': function(){document.location = url;}
+               });
+            }
+            </script>
 
         <script src="js/Bloodhound.js"></script>
         <script src="js/lib.js"></script>
