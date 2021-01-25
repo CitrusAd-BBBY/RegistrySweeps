@@ -1,0 +1,42 @@
+// Import styles
+@import "variables";
+@import "common";
+
+
+.registry-steps{
+    &__wrapper{
+        &--container{
+            @extend .custom-row;
+            .steps-content{
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                padding-bottom: 30px;
+                .single-step{
+                    max-width: 22%;
+                    text-align: center;
+                    img{
+                        max-width: 150px;
+                    }
+                    &__title{
+                        font-size: 12px;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 700;
+                    }
+                    &__sub-title{
+                        font-size: 12px;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 500;
+                        padding : 8px 0;
+                        line-height: 15px;
+                        max-width: 170px;
+                        a{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
