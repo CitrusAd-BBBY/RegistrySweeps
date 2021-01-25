@@ -1,0 +1,480 @@
+// Import styles
+@import "variables";
+@import "common";
+
+
+// Media-Desktop Large
+@media only screen and (max-width : 2560px){
+    .custom-row{padding : 0 32%;}
+
+    // Top Hero
+    .hero-section{
+        &__wrapper{
+            &--container{
+                .text-box{
+                    top: 28%;
+                }
+            }
+        }
+    }
+}
+
+// Media-Desktop Large
+@media only screen and (max-width : 1920px){
+    .custom-row{padding : 0 25%;}
+
+    // Top Hero
+    .hero-section{
+        &__wrapper{
+            &--container{
+                .text-box{
+                    top: 25%;
+                }
+            }
+        }
+    }
+}
+
+// Media-Desktop Large
+@media only screen and (max-width : 1660px){
+    .custom-row{padding : 0 21%;}
+
+    // Top Hero
+    .hero-section{
+        &__wrapper{
+            &--container{
+                .text-box{
+                    top: 24%;
+                }
+            }
+        }
+    }
+}
+
+
+// Media-Desktop Large
+@media only screen and (max-width: 1440px){
+    .custom-row{padding : 0 18%;}
+
+    // Top Hero
+    .hero-section{
+        &__wrapper{
+            &--container{
+                .text-box{
+                    top: 28%;
+                }
+            }
+        }
+    }
+}
+
+// Media-Desktop Large
+@media only screen and (max-width: 1280px){
+    .custom-row{padding : 0 13%;}
+    // Top Hero
+    .hero-section{
+        &__wrapper{
+            &--container{
+                .text-box{
+                    top: 31%;
+                }
+            }
+        }
+    }
+}
+
+// Media-Desktop
+@media only screen and (max-width: 1024px){
+    .custom-row{padding : 0 80px;}
+    // Top Hero
+    .hero-section{
+        &__wrapper{
+            &--container{
+                .text-box{
+                    top: 28%;
+                }
+            }
+        }
+    }
+}
+
+
+// Media-Tab
+@media only screen and (min-width: 768px) and (max-width:1023px){
+    .custom-row{padding : 0 40px;}
+
+    // Top Hero
+    .hero-section{
+        &__wrapper{
+            &--container{
+                .text-box{
+                    top: 24%;
+                }
+            }
+        }
+    }
+
+    // Gift Card
+    .gift-card-section{
+        &__wrapper{
+            &--container{
+                padding : 0 16px;
+                .column{
+                    &:nth-child(1){
+                        width:34%;
+                        margin: 28px 0 26px 5px;
+                        border-right: 2px solid $white;
+                    }
+                    &:nth-child(2){
+                        width:37%;
+                        margin : 36px 0 30px;
+                        .column__title{
+                            font-size: 17px;
+                        }
+                    }
+                    &:nth-child(3){
+                        width:24%;
+                        padding : 5px 5px 5px 0;
+                    }
+                    &__title{
+                        font-size: 20px;
+                        padding-bottom: 12px;
+                        line-height: 22px;
+                    }
+                    &__short-description{
+                        font-size: 9px;
+                        line-height: 13px;
+                        max-width: 210px;
+                        padding-right: 0;
+                    }
+                    &__price-wrap{
+                        &--price{
+                            padding : 0 8px;
+                            h6{
+                                font-size: 17px;
+                                padding-bottom: 6px;
+                                line-height: 13px;
+                            }
+                            .amount{
+                                font-size: 26px;
+                                padding: 0 0 0 7px;
+                                span{
+                                    font-size: 16px;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+// Media-Mobile
+@media only screen and (max-width: 767px){
+
+    // Common class
+    .desktop-hide{display: block;}
+    .mobile-hide{display: none;}
+    .custom-row{padding : 0 20px;}
+
+    // Header
+    .header{
+        &__wrapper{
+            &--cta-container{
+                padding : 0 20px !important;
+            }
+            &--logo-container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                a{
+                    img{
+                        width : 68px;
+                    }
+                    &:last-child{
+                        img{
+                            width : 140px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Top Hero
+    .hero-section{
+        &__wrapper{
+            &--container{
+                padding : 20px 0;
+                .text-box{
+                    top: 57%;
+                    left : 0;
+                    padding : 16px;
+                    margin: 0 7%;
+                    &__title{
+                        font-size : 18px;
+                        padding-bottom : 0;
+                        line-height: 16px;
+                        max-width: 250px;
+                    }
+                    &__sub-title{
+                        font-size: 12px;
+                        max-width: 220px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+    // How it works
+    .registry-steps{
+        &__wrapper{
+            &--container{
+                .steps-content{
+                    flex-wrap: wrap;
+                    .single-step{
+                        max-width: 45%;
+                        img{
+                            max-width: 150px;
+                        }
+                        &__title{
+                            font-size: 13px;
+                        }
+                        &__sub-title{
+                            font-size: 12px;
+                            max-width: 170px;
+                        }
+                        &:nth-child(1), &:nth-child(2){
+                            padding-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Gift Card
+    .gift-card-section{
+        &__wrapper{
+            &--container{
+                padding : 24px 16px;
+                flex-wrap: wrap;
+                .column{
+                    color : $white;
+                    text-align: center;
+                    &:nth-child(1){
+                        width:100%;
+                        margin: 0;
+                        border-right: none;
+                        border-bottom: 2px solid $white;
+                    }
+                    &:nth-child(2){
+                        width:100%;
+                        margin : 36px 0 30px;
+                        .column__title{
+                            text-align: center;
+                            font-size: 18px;
+                            line-height: 20px;
+                            padding-bottom: 20px;
+                        }
+                    }
+                    &:nth-child(3){
+                        width:100%;
+                        padding : 5px 5px 5px 0;
+                    }
+                    &__title{
+                        font-size: 26px;
+                        padding-bottom: 0;
+                        line-height: 28px;
+                    }
+                    &__short-description{
+                        font-size: 11px;
+                        line-height: 16px;
+                        max-width: 300px;
+                        padding-right: 0;
+                        margin: 0 auto;
+                        padding : 20px 0;
+                    }
+                    &__price-wrap{
+                        &--price{
+                            padding : 0 16px;
+                            h6{
+                                font-size: 17px;
+                                padding-bottom: 6px;
+                            }
+                            .amount{
+                                font-size: 26px;
+                                padding: 0 0 0 6px;
+                                span{
+                                    font-size: 16px;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Feature Products
+    .feature-products{
+        padding: 28px 0;
+        &__wrapper{
+            &--container{
+                flex-wrap: wrap;
+                .column{
+                    text-align: center;
+                    &:nth-child(1){
+                        width: 100%;
+                        order: 2;
+                        padding-top: 30px;
+                    }
+                    &:nth-child(2){
+                        width: 100%;
+                    }
+                    &__title{
+                        font-size: 24px;
+                    }
+                    &__duration{
+                        font-size: 14px;
+                    }
+                    &__short-description{
+                        font-size: 12px;
+                        line-height: 16px;
+                        max-width: 250px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+    // Product List
+    .products-list{
+        padding-bottom: 40px;
+        &__wrapper{
+            &--container{
+                flex-wrap : wrap;
+                .single-product{
+                    max-width: 47%;
+                    &__title{
+                        font-size: 14px;
+                        padding : 24px 0 20px;
+                        max-width: 190px;
+                    }
+                    &__cta{
+                        display: block;
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                    &:nth-child(1), &:nth-child(2){
+                        padding-bottom: 36px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Weekly Brands
+    .weekly-brand{
+        &__wrapper{
+            &--container{
+                flex-wrap: wrap;
+                .single-item{
+                    flex-wrap: wrap;
+                    width : 47%;
+                    padding : 10px 0;
+                }
+            }
+        }
+    }
+
+    // CTA for Products List
+    .products-list-cta{
+        &__wrapper{
+            padding : 0 20px;
+            &--container{
+                background-image: url("../img/bg/star-mobile.png");
+            }
+        }
+    }
+
+    // Banner C03.7 3D Nursery
+    .search-banner{
+        padding : 40px 0;
+    }
+
+    // Footer Section
+    .footer-section{
+        padding : 32px 0;
+    }
+
+
+}
+
+// iPhone 6/7/8 Plus
+@media only screen and (max-width: 414px){
+    // Top Hero
+    .hero-section{
+        &__wrapper{
+            &--container{
+                .text-box{
+                    top: 60%;
+                    left: 5%;
+                }
+            }
+        }
+    }
+}
+
+// iPhone X
+@media only screen and (max-width: 375px){
+    // Top Hero
+    .hero-section{
+        &__wrapper{
+            &--container{
+                .text-box{
+                    top: 57%;
+                    left: 1%;
+                }
+            }
+        }
+    }
+}
+
+// Mobile S5 Galaxy
+@media only screen and (max-width: 360px){
+    // Top Hero
+    .hero-section{
+        &__wrapper{
+            &--container{
+                .text-box{
+                    top: 56%;
+                }
+            }
+        }
+    }
+}
+
+// Mobile small device
+@media only screen and (max-width: 320px){
+    // Top Hero
+    .hero-section{
+        &__wrapper{
+            &--container{
+                .text-box{
+                    top: 51%;
+                }
+            }
+        }
+    }
+}

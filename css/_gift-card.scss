@@ -1,0 +1,94 @@
+// Import styles
+@import "variables";
+@import "common";
+
+.gift-card-section{
+    &__wrapper{
+        @extend .custom-row;
+        &--container{
+            padding : 0 16px;
+            background: $teal;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            .column{
+                color : $white;
+                &:nth-child(1){
+                    width:34%;
+                    margin: 36px 0 30px 15px;
+                    border-right: 2px solid $white;
+                }
+                &:nth-child(2){
+                    width:37%;
+                    margin : 36px 0 30px;
+                    .column__title{
+                        text-align: center;
+                        font-size: 22px;
+                        font-family: 'Rokkitt', serif;
+                        font-weight: 600;
+                    }
+                }
+                &:nth-child(3){
+                    width:24%;
+                    padding : 5px 5px 5px 0;
+                }
+                &__title{
+                    font-size: 26px;
+                    font-family: 'Rokkitt', serif;
+                    font-weight: 600;
+                    padding-bottom: 12px;
+                    line-height: 28px;
+                }
+                &__short-description{
+                    font-size: 11px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    line-height: 16px;
+                    max-width: 280px;
+                    padding-right: 16px;
+                }
+                &__price-wrap{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    &--price{
+                        padding : 0 16px;
+                        h6{
+                            font-size: 20px;
+                            font-family: 'Rokkitt', serif;
+                            font-weight: 600;
+                            padding-bottom: 6px;
+                        }
+                        .amount{
+                            font-size: 33px;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 700;
+                            position: relative;
+                            display: flex;
+                            flex-wrap: nowrap;
+                            align-items: flex-start;
+                            justify-content: center;
+                            padding: 0 0 0 12px;
+                            span{
+                                position: absolute;
+                                top: 2px;
+                                left: 0;
+                                font-size: 20px;
+                            }
+                            
+                        }
+                        &:last-child{
+                            .amount{
+                                span{
+                                    left : 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
