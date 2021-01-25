@@ -1,22 +1,22 @@
 {
-  "name": "RegistrySweeps2021",
+  "name": "RegistrySweeps-Staging",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d week1"
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/citrusad-bbby/RegistrySweeps2021.git"
+    "url": "git+https://github.com/citrusad-bbby/RegistrySweeps-Staging.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/citrusad-bbby/RegistrySweeps2021/issues"
+    "url": "https://github.com/citrusad-bbby/RegistrySweeps-Staging/issues"
   },
-  "homepage": "https://github.com/citrusad-bbby/RegistrySweeps2021#readme",
+  "homepage": "https://github.com/citrusad-bbby/RegistrySweeps-Staging#readme",
   "dependencies": {
     "gh-pages": "^3.1.0"
   }
