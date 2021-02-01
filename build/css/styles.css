@@ -2610,6 +2610,10 @@ sup {
   margin: 0 auto;
 }
 
+#week3 .column__short-description {
+  max-width: 260px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
