@@ -1,0 +1,56 @@
+// Import styles
+@import "variables";
+@import "common";
+
+.design-tool{
+    margin-top: 40px;
+    &__wrapper {
+        &--container{
+            display: flex;
+            flex-wrap: nowrap;
+            text-align: center;
+            justify-content: center;
+            background-color: $light-orange;
+            .column{
+                &:first-child{
+                    min-width: 40%;
+                }
+                &:last-child{
+                    position: relative;
+                    text-align: left;
+                    padding : 16px 30px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    .title{
+                        font-family: 'Rokkitt', serif;
+                        font-weight: 700;
+                        font-size: 30px;
+                        line-height: 31px;
+                        max-width: 280px;
+                    }
+                    .sub-title{
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 500;
+                        line-height: 25px;
+                        font-size: 16px;
+                    }
+                    .cta{
+                        font-family: 'Rokkitt', serif;
+                        font-weight: 700;
+                        font-size: 18px;
+                        position: absolute;
+                        right : 30px;
+                        bottom : 15%;
+                        a{
+                            text-decoration: underline;
+                            &:hover{
+                                color : $teal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
