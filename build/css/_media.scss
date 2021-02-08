@@ -5,7 +5,7 @@
 
 // Media-Desktop Large
 @media only screen and (max-width : 2560px){
-    .custom-row{padding : 0 32%;}
+    .custom-row{padding : 0 30%;}
 
     // Top Hero
     .hero-section{
@@ -17,6 +17,12 @@
             }
         }
     }
+}
+
+
+// Media-Desktop Large
+@media only screen and (max-width : 2300px){
+    .custom-row{padding : 0 24%;}
 }
 
 // Media-Desktop Large
@@ -84,6 +90,26 @@
 }
 
 // Media-Desktop
+@media only screen and (min-width:1024px ) and (max-width: 1279px){
+
+    // Design Tools
+    .design-tool{
+        margin-top: 40px;
+        &__wrapper {
+            &--container{
+                .column{
+                    &:last-child{
+                        .sub-title{
+                            line-height: 20px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
 @media only screen and (max-width: 1024px){
     .custom-row{padding : 0 80px;}
     // Top Hero
@@ -96,6 +122,7 @@
             }
         }
     }
+
 }
 
 
@@ -163,6 +190,34 @@
                                 }
                                 
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Design Tools
+    .design-tool{
+        margin-top: 40px;
+        &__wrapper {
+            &--container{
+                .column{
+                    &:last-child{
+                        padding : 16px 24px;
+                        .title{
+                            font-size: 24px;
+                            line-height: 25px;
+                            max-width: 260px;
+                        }
+                        .sub-title{
+                            line-height: 20px;
+                            font-size: 13px;
+                        }
+                        .cta{
+                            font-size: 16px;
+                            right : 30px;
+                            bottom : 15%;
                         }
                     }
                 }
@@ -240,6 +295,7 @@
                     flex-wrap: wrap;
                     .single-step{
                         max-width: 45%;
+                        min-width: 45%;
                         img{
                             max-width: 150px;
                         }
@@ -323,6 +379,117 @@
         }
     }
 
+    // Product List
+    .products-list{
+        padding-bottom: 40px;
+        &__wrapper{
+            &--container{
+                flex-wrap : wrap;
+                .single-product{
+                    max-width: 47%;
+                    min-width: 47%;
+                    &__title{
+                        font-size: 14px;
+                        padding : 24px 0 20px;
+                        max-width: 190px;
+                    }
+                    &__cta{
+                        display: block;
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                    &:nth-child(1), &:nth-child(2){
+                        padding-bottom: 36px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Weekly Brands
+    .weekly-brand{
+        &__wrapper{
+            &--container{
+                flex-wrap: wrap;
+                .single-item{
+                    flex-wrap: wrap;
+                    width : 47%;
+                    padding : 10px 0;
+                    justify-content: center;
+                    &:nth-child(2), &:nth-child(5){
+                        justify-content: center;
+                    }
+                    &:nth-child(3), &:nth-child(6){
+                        justify-content: center
+                    }
+                }
+            }
+        }
+    }
+
+    // CTA for Products List
+    .products-list-cta{
+        &__wrapper{
+            padding : 0 20px;
+            &--container{
+                background-image: url("../img/bg/star-mobile.png");
+            }
+        }
+    }
+
+    
+    // Design Tools
+    .design-tool{
+        margin-top: 40px;
+        &__wrapper {
+            &--container{
+                flex-wrap: wrap;
+                .column{
+                    justify-content: center;
+                    &:first-child{
+                        min-width: 100%;
+                    }
+                    &:last-child{
+                        padding : 20px 16px;
+                        text-align: center;
+                        max-width: 290px;
+                        .title{
+                            font-size: 24px;
+                            line-height: 25px;
+                            max-width: 260px;
+                            margin: 0 auto;
+                            min-width: 100%;
+                        }
+                        .sub-title{
+                            line-height: 20px;
+                            font-size: 14px;
+                            padding : 16px 0 10px;
+                            max-width: 260px;
+                            min-width: 100%;
+                        }
+                        .cta{
+                            position: unset;
+                            right : 16px;
+                            font-size: 16px;
+                            min-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Footer Section
+    .footer-section{
+        padding : 32px 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 639px){
+
 
     // Feature Products
     .feature-products{
@@ -356,69 +523,6 @@
             }
         }
     }
-
-    // Product List
-    .products-list{
-        padding-bottom: 40px;
-        &__wrapper{
-            &--container{
-                flex-wrap : wrap;
-                .single-product{
-                    max-width: 47%;
-                    &__title{
-                        font-size: 14px;
-                        padding : 24px 0 20px;
-                        max-width: 190px;
-                    }
-                    &__cta{
-                        display: block;
-                        a{
-                            font-size: 14px;
-                        }
-                    }
-                    &:nth-child(1), &:nth-child(2){
-                        padding-bottom: 36px;
-                    }
-                }
-            }
-        }
-    }
-
-    // Weekly Brands
-    .weekly-brand{
-        &__wrapper{
-            &--container{
-                flex-wrap: wrap;
-                .single-item{
-                    flex-wrap: wrap;
-                    width : 47%;
-                    padding : 10px 0;
-                }
-            }
-        }
-    }
-
-    // CTA for Products List
-    .products-list-cta{
-        &__wrapper{
-            padding : 0 20px;
-            &--container{
-                background-image: url("../img/bg/star-mobile.png");
-            }
-        }
-    }
-
-    // Banner C03.7 3D Nursery
-    .search-banner{
-        padding : 40px 0;
-    }
-
-    // Footer Section
-    .footer-section{
-        padding : 32px 0;
-    }
-
-
 }
 
 // iPhone 6/7/8 Plus
