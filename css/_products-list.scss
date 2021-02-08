@@ -1,0 +1,55 @@
+// Import styles
+@import "variables";
+@import "common";
+
+.products-list{
+    padding-bottom: 40px;
+    &__wrapper{
+        &--products-brief{
+            .descriptions{
+                text-align: center;
+                font-size: 18px;
+                line-height: 24px;
+                font-family: Montserrat-Regular;
+                font-weight: normal;
+            }
+        }
+        .weekly-product-wrapper{
+            padding : 20px 0 30px;
+        }
+        &--container{
+            @extend .flex-container;
+            .single-product{
+                max-width: 23%;
+                text-align: center;
+                img{max-width: 200px;}
+                &__title{
+                    font-size: 14px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                    line-height: 16px;
+                    padding : 36px 0 20px;
+                    max-width: 190px;
+                    margin : 0 auto;
+                }
+                &__cta{
+                    display: block;
+                    a{
+                        font-size: 14px;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 600;
+                        line-height: 16px;
+                        border-bottom: 3px solid $black;
+                    }
+                }
+            }
+        }
+        .qualifying-products{
+            .single-product{
+                .single-product__title{
+                    min-height: 104px;
+                }
+            }
+        }
+    }
+}
