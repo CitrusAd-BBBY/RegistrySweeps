@@ -28,10 +28,10 @@ let weeks = {
 
 let currentDate = new Date();
 
-let utc_offset = currentDate.getTimezoneOffset();
-currentDate.setMinutes(currentDate.getMinutes() + utc_offset);
-let usa_offset = 5*60;
-currentDate.setMinutes(currentDate.getMinutes() - usa_offset);
+// let utc_offset = currentDate.getTimezoneOffset();
+// currentDate.setMinutes(currentDate.getMinutes() + utc_offset);
+// let usa_offset = 5*60;
+// currentDate.setMinutes(currentDate.getMinutes() - usa_offset);
 
 if(location.search){
     currentDate = new Date(location.search.replace('?currentDate=', ''));
