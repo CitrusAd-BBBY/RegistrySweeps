@@ -25,7 +25,6 @@ let weeks = {
         }
 }
 
-
 let currentDate = new Date();
 
 let utc_offset = currentDate.getTimezoneOffset();
@@ -36,7 +35,7 @@ currentDate.setMinutes(currentDate.getMinutes() - usa_offset);
 if(location.search){
     currentDate = new Date(location.search.replace('?currentDate=', ''));
 }
-
+console.log(currentDate);
 let found = false;
 
 for (const week in weeks) {
@@ -48,8 +47,4 @@ for (const week in weeks) {
         document.getElementById(week).remove();
     } 
 }
-
-// if(found !== false){
-//     document.getElementById('default').remove();
-// }
 
