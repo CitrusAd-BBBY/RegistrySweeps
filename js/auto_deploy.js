@@ -19,12 +19,11 @@ let weeks = {
             start : '2021/03/03 00:00:00',
             end : '2021/03/09 23:59:59'
         },
-        week6 : {
-            start : '2021/03/10 00:00:00',
-            end : '2021/03/16 23:59:59'
-        }
+        // week6 : {
+        //     start : '2021/03/10 00:00:00',
+        //     end : '2021/03/16 23:59:59'
+        // }
 }
-
 
 let currentDate = new Date();
 
@@ -48,7 +47,6 @@ for (const week in weeks) {
         document.getElementById(week).remove();
     } 
 }
-
 // if(found !== false){
 //     document.getElementById('default').remove();
 // }
