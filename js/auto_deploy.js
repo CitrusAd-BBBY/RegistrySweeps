@@ -36,7 +36,7 @@ currentDate.setMinutes(currentDate.getMinutes() - usa_offset);
 if(location.search){
     currentDate = new Date(location.search.replace('?currentDate=', ''));
 }
-console.log(currentDate);
+
 let found = false;
 
 for (const week in weeks) {
