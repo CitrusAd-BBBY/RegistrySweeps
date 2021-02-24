@@ -19,19 +19,19 @@ let weeks = {
             start : '2021-03-03 00:00:00',
             end : '2021-03-09 23:59:59'
         },
-//         week6 : {
-//             start : '2021/03/10 00:00:00',
-//             end : '2021/03/16 23:59:59'
-//         }
+        week6 : {
+            start : '2021-03-10 00:00:00',
+            end : '2021-03-16 23:59:59'
+        }
 }
 
 
 let currentDate = new Date();
 
-// let utc_offset = currentDate.getTimezoneOffset();
-// currentDate.setMinutes(currentDate.getMinutes() + utc_offset);
-// let usa_offset = 5*60;
-// currentDate.setMinutes(currentDate.getMinutes() - usa_offset);
+let utc_offset = currentDate.getTimezoneOffset();
+currentDate.setMinutes(currentDate.getMinutes() + utc_offset);
+let usa_offset = 5*60;
+currentDate.setMinutes(currentDate.getMinutes() - usa_offset);
 
 // if(location.search){
 //     currentDate = new Date(location.search.replace('?currentDate=', ''));
