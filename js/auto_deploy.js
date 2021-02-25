@@ -33,11 +33,11 @@ currentDate.setMinutes(currentDate.getMinutes() + utc_offset);
 let usa_offset = 5*60;
 currentDate.setMinutes(currentDate.getMinutes() - usa_offset);
 
-// if(location.search){
-//     currentDate = new Date(location.search.replace('?currentDate=', ''));
-// }
+let search=new URLSearchParams(location.search.substring(1));
 
-// console.log(currentDate);
+if(search.get('currentDate')){
+    currentDate = new Date(search.get('currentDate'));
+}
 
 let found = false;
 
