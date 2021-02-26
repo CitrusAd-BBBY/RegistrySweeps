@@ -165,6 +165,53 @@ sup{vertical-align:top;}
     padding : 40px 0 0;
 }
 
+// Post Registry
+.post-sweeps{
+    &__wrapper{
+            background: $teal;
+            padding : 0 28px;
+        &--container{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            .column{
+                font-size: 14px;
+                color : $white;
+                padding : 35px 0 28px;
+                text-align: center;
+                &:first-child{
+                    width : 60%;
+                }
+                &:last-child{
+                    width : 34%;
+                    text-align: center;
+                    background-image: url(../img/bg/Post_Stars.png);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .text{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                    line-height: 20px;
+                    max-width: 490px;
+                }
+                .cta{
+                    border-bottom: 1px solid $white;
+                    padding-bottom: 2px;
+                    display: initial;
+                    a{
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 500;
+                        color : $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // Footer Section
 .footer-section{
     margin-top: 40px;

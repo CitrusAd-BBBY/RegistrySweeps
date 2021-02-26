@@ -76,7 +76,7 @@
 
 // Media-Desktop Large
 @media only screen and (max-width: 1280px){
-    .custom-row{padding : 0 13%;}
+    .custom-row{padding : 0 10%;}
     // Top Hero
     .hero-section{
         &__wrapper{
@@ -267,7 +267,7 @@
             &--container{
                 padding : 20px 0;
                 .text-box{
-                    top: 57%;
+                    top: 61%;
                     left : 0;
                     padding : 16px;
                     margin: 0 7%;
@@ -474,6 +474,30 @@
                             font-size: 16px;
                             min-width: 100%;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    // Post Registry
+    .post-sweeps{
+        &__wrapper{
+            &--container{
+                flex-wrap: wrap;
+                .column{
+                    .text{
+                        max-width: 310px;
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+                    &:first-child{
+                        width : 100%;
+                        padding-bottom: 0;
+                    }
+                    &:last-child{
+                        width : 100%;
+                        margin-bottom: 20px;
                     }
                 }
             }

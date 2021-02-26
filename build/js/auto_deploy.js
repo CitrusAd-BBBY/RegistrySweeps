@@ -22,10 +22,6 @@ let weeks = {
         week6 : {
             start : '2021/03/10 00:00:00',
             end : '2021/03/16 23:59:59'
-        },
-        week7 : {
-            start : '2021/03/17 00:00:00',
-            end : '2021/12/31 23:59:59'
         }
 }
 
@@ -43,6 +39,7 @@ if(search.get('currentDate')){
     currentDate = new Date(search.get('currentDate'));
 }
 
+
 let found = false;
 
 for (const week in weeks) {
@@ -54,6 +51,9 @@ for (const week in weeks) {
         document.getElementById(week).remove();
     } 
 }
+
+
+
 
 // if(found !== false){
 //     document.getElementById('default').remove();
